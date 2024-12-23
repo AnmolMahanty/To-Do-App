@@ -23,12 +23,3 @@ This app is built using the following technologies:
 - **JavaScript**: Adding interactivity, including task creation, deletion, completion, and updating the progress bar.
 - **LocalStorage**: Store tasks locally so that they persist even after the page is reloaded.
 
-## Installation
-
-To run this project locally on your machine, follow these steps:
-
-1. **Clone the Repository**:
-   Clone the repository to your local machine using the following command:
-
-   ```bash
-   git clone https://github.com/your-username/to-do-app.git
