@@ -1,138 +1,170 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --background: #0d1117;
+    --secondaryBackground: #1f2937;
+    --text: #e4e4e7;
+    --purple: #8b5cf6;
+    --teal: #38bdf8;
+    --gradient: linear-gradient(90deg, #1E3A8A, #7C3AED);
 }
 
-:root{
-    --background:#000430 ;
-    --secondaryBackground:#171c48 ;
-    --text:#fff ;
-    --purple:#828dff ;
-    --teal:#24feee;
-}
-
-body{
+body {
+    font-family: 'Poppins', sans-serif;
     background-color: var(--background);
     color: var(--text);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 120px auto 0 auto;
-    max-width: 500px;
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.stats-container{
-    padding: 30px;
-    border-radius: 20px;
-    border: 2px solid var(--purple);
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    /* text-align: center; */
 }
 
 .details{
     width: 100%;
-}
-
-#progressBar{
-    width: 100%;
-    height: 10px;
-    background-color: var(--secondaryBackground);
-    border-radius: 5px;
+    gap: 10px;
     margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-weight: bold;
-    position: relative;
 }
 
-#progress{
-    width: 50%;
-    height: 100%;
-    background-color: var(--teal);
-    border-radius: 10px;
-    transform: all 0.5s ease-in-out;
+.stats-container {
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--purple);
+    display: flex;
+    gap: 5px;
+    background: var(--secondaryBackground);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
 }
-#numbers{
+
+#progressBar {
+    width: 100%;
+    height: 12px;
+    background-color: grey;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#progress {
+    width: 100%;
+    height: 100%;
+    background: var(--gradient);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#numbers {
     width: 100px;
     height: 100px;
     background-color: var(--purple);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: bold;
-
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-form{
-    margin-top: 60px;
-    width: 100%;
+form {
+    margin-top: 40px;
     display: flex;
-    gap: 20px;
-
+    gap: 15px;
+    width: 100%;
 }
 
-form input{
+form input {
     flex: 1;
-    padding: 16px;
+    padding: 15px;
     border-radius: 5px;
     border: 1px solid var(--purple);
     background-color: var(--secondaryBackground);
     color: var(--text);
     outline: none;
+    font-size: 1rem;
 }
 
-form button{
-    padding: 16px;
-    border-radius: 45%;
-    border: 1px solid var(--purple);
-    background-color: var(--purple);
-    color: var(--text);
-    font-size: 30px;
+form input::placeholder {
+    color: #b3b3b3;
+}
+
+form button {
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    background: var(--gradient);
+    color: white;
+    font-size: 1.5rem;
     font-weight: bold;
     outline: none;
     cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
 }
 
-#task-list{
+form button:hover {
+    transform: scale(1.1);
+}
+
+#task-list {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
     list-style: none;
+    padding: 0;
 }
 
-.taskItem{
+.taskItem {
     display: flex;
     background-color: var(--secondaryBackground);
     padding: 20px;
     border-radius: 10px;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-.task{
+.taskItem:hover {
+    background: var(--gradient);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.task {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.tsk input{
+.tsk input {
     width: 20px;
     height: 20px;
 }
-.taskItem img{
+
+.task.completed {
+    text-decoration: line-through;
+    color: var(--teal);
+}
+
+.taskItem img {
     width: 24px;
     height: 24px;
     margin: 0 10px;
