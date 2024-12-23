@@ -73,3 +73,68 @@ body{
     font-weight: bold;
 
 }
+
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+}
+
+form input{
+    flex: 1;
+    padding: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--purple);
+    background-color: var(--secondaryBackground);
+    color: var(--text);
+    outline: none;
+}
+
+form button{
+    padding: 16px;
+    border-radius: 45%;
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+#task-list{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    list-style: none;
+}
+
+.taskItem{
+    display: flex;
+    background-color: var(--secondaryBackground);
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tsk input{
+    width: 20px;
+    height: 20px;
+}
+.taskItem img{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
