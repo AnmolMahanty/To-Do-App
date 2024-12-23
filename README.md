@@ -2,6 +2,10 @@
 
 A simple and interactive To-Do App that helps you manage your daily tasks efficiently. This app provides an intuitive interface to add, delete, and mark tasks as completed, while also displaying a progress bar and task statistics.
 
+# Made By
+
+Anmol Mahanty
+
 ## Features
 
 - **Task Management**: Add, edit, and remove tasks easily.
