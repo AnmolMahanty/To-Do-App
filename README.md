@@ -1,3 +1,8 @@
+- Name: Anmol Mahanty
+- ID : CT6WDS2544
+- Domain : Frontend Web Development
+- Company : CODETECH IT SOLUTIONS PVT.LTD
+
 # To-Do App
 
 A simple and interactive To-Do App that helps you manage your daily tasks efficiently. This app provides an intuitive interface to add, delete, and mark tasks as completed, while also displaying a progress bar and task statistics.
